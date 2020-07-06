@@ -1,0 +1,177 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="צור קשר - עמוד זה מאפשר למשתמש לשלוח לנו פניה במידה ויש לו שאלות או טיפים" />
+    <meta name="keywords" content="צור קשר, פניה" />
+    <meta name="author" content="שרון אשתון, ליפז חגוס, נועם אהרון, חן סננדג'י" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="icon" href="images/favicon.png" />
+    <title>קחו לכם רגע - צור קשר</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- JS -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+
+</head>
+
+<body>
+
+    <div id="container">
+        <header>
+            <nav id="nav1">
+                <ul>
+                    <li>
+
+                        <a href="index.html"><img src="images/logo.png" class="logo" /></a>
+
+                    </li>
+                    <li>
+                        <a href="#" class="navDesign" id="notActive1">להוריד את הלחץ</a>
+                        <ul>
+                            <li>
+                                <a href="tipsHome.html" class="navDesign">בבית</a>
+                            </li>
+                            <li><a href="#" class="navDesign" id="notActive2">בעבודה</a></li>
+                            <li><a href="#" class="navDesign" id="notActive3">מחוץ לבית</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="yoga.html" class="navDesign">יוגה</a>
+                        <ul>
+                            <li>
+                                <a href="yogaPoses.html" class="navDesign">תנוחות בסיס</a>
+                            </li>
+                            <li>
+                                <a href="yogaBeginners.html" class="navDesign">מתחילים</a>
+                            </li>
+                            <li><a href="#" class="navDesign" id="notActive4">מתקדמים</a></li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="navDesign" id="notActive5">מדיטציה</a>
+                        <ul>
+                            <li><a href="#" class="navDesign" id="notActive6">דמיון מודרך</a></li>
+                            <li><a href="#" class="navDesign" id="notActive7">סוגי מדיטציה</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="navDesign" id="notActive8">עזרים לתרגול</a>
+                        <ul>
+                            <li><a href="#" class="navDesign" id="notActive9">נשימות</a></li>
+                            <li><a href="#" class="navDesign" id="notActive10">מוזיקה לתרגול</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="about.html" class="navDesign">אודות</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <br />
+
+        <div>
+            <img src="images/Leaves.png" class="l1" />
+            <img src="images/leaves2.png" class="l2" />
+        </div>
+
+
+        <article id="contectUsp">
+
+            <header>
+                <img src="images/contactUS/EmailMan.png" class="topImg" />
+                <h1 class="headerP"> צור קשר</h1>
+            </header>
+
+            <img src="images/contactUS/Pinkback.png" id="Pinkback1" />
+            <p>
+                יש לכם טיפים נוספים בשבילנו? <br />
+                יש לכם שאלות? <br />
+                צרו קשר! <br />
+            </p>
+
+
+            <from>
+
+                <div id="row">
+                    <label for="firstName">
+                        שם:
+                        <br />
+                        <input type="text" id="firstName" />
+                    </label><br />
+                    <label for="age">
+                        גיל:
+                        <br />
+                        <input type="text" id="age" />
+                    </label><br />
+                    מין
+                    <br />
+                    <label for="male" id="male">
+                        <input type="radio" id="male" name="מין" /> זכר
+                    </label>
+                    <label for="female" id="female">
+                        <input type="radio" id="female" name="מין" /> נקבה
+                    </label><br />
+                    <label for="email">
+                        כתובת אימייל:
+                        <br />
+                        <input type="text" id="email" />
+                    </label><br />
+                    נושא הפנייה:
+                    <br />
+                    <select id="Subjectmatter">
+                        <option value="1">בחר ערך מהרשימה</option>
+                        <option value="2">טיפים</option>
+                        <option value="3">יוגה</option>
+                        <option value="4">מדיטציה</option>
+                        <option value="5">שאלות</option>
+                        <option value="6">אחר</option>
+                    </select><br />
+                </div>
+
+                <div id="row2">
+                    <label for="ContentReferral">
+                        תוכן הפנייה:
+                        <br />
+                        <textarea id="ContentReferral" placeholder="הזן את תוכן הפנייה" rows="10"></textarea>
+
+                    </label>
+                </div>
+            </from>
+            <img src="images/contactUS/computerman.png" id="computerman" />
+
+            <from>
+                <label for="send">
+                    <input type="submit" id="send" value="שלח" />
+                </label>
+            </from>
+        </article>
+
+        <footer id="footer7">
+            <a href="contactUS.html">צור קשר</a>
+            <a href="siteMap.html">מפת האתר</a>
+            <a href="about.html">אודות</a>
+            <br /> <br /><br />
+
+            <p>כל הזכויות שמורות לצוות קחו לכם רגע ©</p>
+        </footer>
+
+
+    </div>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
